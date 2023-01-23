@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Details</title>
+</head>
+
+<body>
+    <h3>Contact Details</h3>
+    <p>You can contact me on the following contact numbers</p>
+    <p>
+        <br>060 101 0011
+        <br>082 001 1100
+    </p>
+    <fieldset>
+        <form style="display:table" class="" action="mailto:shaunc92@gmail.com" method="post" enctype="text/plain">
+            <p><label>Your Name</label>
+                <!--&nbsp; is used as is for single spacing in HTML, this is not a accurate way to space boxes.-->
+                <input type="text" name="Name">
+            </p><br>
+            <p><label>Last Name</label>
+                <input type="text" name="Last Name">
+            </p><br>
+            <p><label>Email address</label>
+                <input type="email" name="Email">
+            </p><br>
+            <!--<input type="color">-->
+            <p><label>Password</label>
+                <input type="password">
+            </p><br><br>
+            <p><label>Please select the date you arrived at the site</label><br>
+                <input type="date">
+            </p><br><br>
+            <p><label>Please add a photo of yourself</label><br>
+                <input type="file">
+            </p><br><br>
+            <p><label>Please add a short story for the picture you have added</label></p><br>
+            <p><textarea name="name" rows="8" cols="47"></textarea></p><br><br>
+            <p>
+                <legend>Do you agree to the terms?</legend>
+                <label><input type="radio" name="radio" DOCTYPEvalue="yes" /> Yes</label>
+                <label><input type="radio" name="radio" value="no" /> No</label>
+            </p>
+            <br>
+            <br>
+
+            <!--<label>Do you want to sign up for our promotional emails</label>
+            <input type="checkbox" name="" value="">-->
+            <input type="submit">
+        </form>
+    </fieldset>
+</body>
+
+</html>
+<style>
+    label {
+        display: table-cell
+    }
+
+    input {
+        display: table-cell
+    }
+
+    p {
+        display: table-row
+    }
+</style>
